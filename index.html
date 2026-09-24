@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1.0"
+	>
+
+	<title>Oh, so you're interested</title>
+
+	<style>
+		:root {
+			color-scheme: dark;
+			--page-background: #222;
+			--card-background: #2d2d2d;
+			--text-color: #f5f5f5;
+			--muted-color: #c8c8c8;
+			--accent-color: #8ab4f8;
+			--content-width: 760px;
+			--page-padding: clamp(16px, 5vw, 40px);
+			--section-spacing: clamp(28px, 7vw, 56px);
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		html {
+			background: var(--page-background);
+		}
+
+		body {
+			margin: 0;
+			padding: var(--page-padding);
+			background: var(--page-background);
+			color: var(--text-color);
+			font-family:
+				-apple-system,
+				BlinkMacSystemFont,
+				"Segoe UI",
+				Roboto,
+				Helvetica,
+				Arial,
+				sans-serif;
+			font-size: clamp(16px, 2.5vw, 19px);
+			line-height: 1.65;
+		}
+
+		.page {
+			width: 100%;
+			max-width: var(--content-width);
+			margin: 0 auto;
+		}
+
+		.profile-card {
+			padding: clamp(20px, 5vw, 36px);
+			background: var(--card-background);
+			border-radius: 18px;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+		}
+
+		header {
+			text-align: center;
+			margin-bottom: var(--section-spacing);
+		}
+
+		h1,
+		h2 {
+			margin: 0;
+			color: var(--text-color);
+			font-weight: 700;
+			line-height: 1.2;
+		}
+
+		h1 {
+			font-size: clamp(2rem, 8vw, 3.4rem);
+			margin-bottom: 24px;
+		}
+
+		h2 {
+			padding-bottom: 8px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+			font-size: clamp(1.35rem, 5vw, 2rem);
+		}
+
+		.profile-image {
+			display: block;
+			width: 100%;
+			max-width: 280px;
+			max-height: 280px;
+			margin: 0 auto;
+			object-fit: cover;
+			border-radius: 16px;
+		}
+
+		section {
+			margin-top: var(--section-spacing);
+		}
+
+		.content {
+			color: var(--muted-color);
+			overflow-wrap: anywhere;
+			word-break: break-word;
+		}
+
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(
+				auto-fit,
+				minmax(min(100%, 180px), 1fr)
+			);
+			gap: clamp(12px, 3vw, 20px);
+			margin-top: 20px;
+		}
+
+		.gallery img {
+			display: block;
+			width: 100%;
+			max-width: 100%;
+			max-height: 280px;
+			aspect-ratio: 1 / 1;
+			object-fit: cover;
+			border-radius: 12px;
+		}
+
+		a {
+			color: var(--accent-color);
+		}
+
+		.empty-profile {
+			color: var(--muted-color);
+			text-align: center;
+		}
+
+		@media (max-width: 480px) {
+			body {
+				padding: 12px;
+				font-size: 16px;
+			}
+
+			.profile-card {
+				padding: 20px 16px;
+				border-radius: 14px;
+			}
+
+			.profile-image {
+				max-width: 220px;
+				max-height: 220px;
+			}
+
+			.gallery {
+				grid-template-columns: 1fr;
+			}
+
+			.gallery img {
+				max-height: 360px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<main class="page">
+		<div class="profile-card">
+			<header>
+				<h1>Oh, so you're interested</h1>
+
+				
+			</header>
+
+			
+<section>
+	<h2>About Me</h2>
+
+	<div class="content">
+		I made this app! <br>
+<br>
+The idea is you get a QR code to your very own free dating page!<br>
+<br>
+Coming soon to google play
+	</div>
+</section>
+
+			
+			
+<section>
+	<h2>Contact</h2>
+
+	<div class="content">
+		Wherever you scanned this code
+	</div>
+</section>
+
+			
+		</div>
+	</main>
+</body>
+</html>
