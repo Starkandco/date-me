@@ -133,6 +133,33 @@
 			text-align: center;
 		}
 
+		.social-links {
+			display: flex;
+			justify-content: center;
+			gap: clamp(12px, 3vw, 16px);
+			margin-top: 20px;
+			flex-wrap: wrap;
+		}
+
+		.social-links a {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background: rgba(138, 180, 248, 0.1);
+			color: var(--accent-color);
+			text-decoration: none;
+			font-size: 18px;
+			transition: all 0.2s ease;
+		}
+
+		.social-links a:hover {
+			background: rgba(138, 180, 248, 0.2);
+			transform: translateY(-2px);
+		}
+
 		@media (max-width: 480px) {
 			body {
 				padding: 12px;
@@ -156,6 +183,12 @@
 			.gallery img {
 				max-height: 360px;
 			}
+
+			.social-links a {
+				width: 36px;
+				height: 36px;
+				font-size: 16px;
+			}
 		}
 	</style>
 </head>
@@ -171,10 +204,13 @@
 				
 <img
 	class="profile-image"
-	src="profile.png?v=1791754959.161"
+	src="profile.png?v=1791756555.029"
 	alt="Profile image"
 >
 
+				<div class="social-links">
+	<a href="https://github.com/https://github.com/starkandco/" title="GitHub" target="_blank">⚙</a>
+</div>
 			</header>
 
 			
@@ -194,22 +230,22 @@ Coming soon to a google play store near you
 	
 			
 <section>
-	<h2>My face (kinda)</h2>
+	<h2>Gallery</h2>
 
 	<div class="gallery">
 		
 	<img
-		src="gallery_0.png?v=1791754959.161"
+		src="gallery_0.png?v=1791756555.029"
 		alt="Gallery image 1"
 	>
 	
 	<img
-		src="gallery_1.png?v=1791754959.161"
+		src="gallery_1.png?v=1791756555.029"
 		alt="Gallery image 2"
 	>
 	
 	<img
-		src="gallery_2.png?v=1791754959.161"
+		src="gallery_2.png?v=1791756555.029"
 		alt="Gallery image 3"
 	>
 	
